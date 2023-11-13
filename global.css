@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+:root {
+    --white-100: #ffffff;
+    --brand-dark-blue: #0d191f;
+    --brand-light-red: #9a002c;
+    --black-200: #111111;
+    --black-400: #666666;
+    --font-primary: 'Dosis',sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: var(--brand-dark-blue);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--brand-light-red);
+    border-radius: 10px;
+  }
+
+body {
+    background-color: var(--brand-dark-blue);
+    color: var(--white-100);
+}
+
+a {
+    color: inherit;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: var(--black-200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.navbar nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar nav ul li a {
+    transition: opacity .3s;
+    color: var(--white-100);
+    font-size: 19px;
+}
+
+.navbar nav ul li a:hover {
+    opacity: .7;
+}
